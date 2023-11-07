@@ -7,14 +7,15 @@
       <title>MANIPULACION DOM</title>
     </head>
     <body>
-      <h1 class="juliopc">MANIPULACION</h1>
+      <h1 class="juliopc">MANIPULACION DEL DOM"</h1>
 
-      <p>Primer parrafo</p>
-      <p class="parrafito">Parrafo con clase</p>
-      <p id="pid">Parrafo con ID</p>
-   
-      <input placeholder="Escriba algo aqui"/>
+         
+      <input id="calculo1" placeholder="Escriba algo aqui"/>
+      <input onchange="console.log('Cambio el input')" id="calculo2" placeholder="Escriba algo aqui" />
+      <button id="btnCalcular" onclick="escucharBtnClick()">Calcular</button>
       
+      <p id="resultado"></p>
+
       <script src="./script.js"></script>
     </body>
 </html>
